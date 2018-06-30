@@ -461,6 +461,91 @@
             "title": "Extension Signing"
         }, 
         {
+            "location": "/developer/directory-structure/", 
+            "text": "Directory Structure\n\n\nThe following provides a brief outline of the directory structure of this project.\n\n\ndocs/\n\n\nDocumentation that gets built and deploy to GitHub pages (you're reading it!).\n\n\nsrc/\n\n\nThis is where all of the source code for this project lives (except for dependencies, of course). Most importantly, this is where the \nbootstrap.js\n file lives, which contains the entry points for the restartless XPCOM add-on wrapping our WebExtension.\n\n\nsrc/webextension/\n\n\nMost of the interesting parts of the source code are in here, to be built as an embedded WebExtension.\n\n\nsrc/webextension/background/\n\n\nAny code meant to run in a background page lives here, such as the datastore and Firefox accounts code. For more information, see the \nREADME.md\n in this directory.\n\n\nsrc/webextension/firstrun/\n\n\nThe first-run page, shown to new users when they install the extension.\n\n\nsrc/webextension/list/\n\n\nCommon code for all the list views in the extension, as well as the specific views themselves (in subdirectories). For more information, see the \nREADME.md\n in this directory.\n\n\nsrc/webextension/list/manage/\n\n\nThe full-tab management UI.\n\n\nsrc/webextension/list/popup/\n\n\nThe \"doorhanger\" UI.\n\n\nsrc/webextension/locales/\n\n\nAll the strings for each locale, in subdirectories with the locale name. For more information, see the \nREADME.md\n in this directory.\n\n\nsrc/webextension/settings/\n\n\nThe settings UI.\n\n\nsrc/webextension/unlock/\n\n\nThe doorhanger to be shown when the datastore is locked.\n\n\nsrc/webextension/widgets/\n\n\nAll the common UI widgets used throughout the source. For more information, see the \nREADME.md\n in this directory.\n\n\ntest/\n\n\nThis is where all of the tests for this project live.\n\n\ntest/integration/\n\n\nEnd-to-end integration tests operating on a compiled version of the add-on running in Firefox. These tests are written in Python with Selenium.\n\n\ntest/unit/\n\n\nUnit tests testing individual components of the source code. These are writen in Javascript using Mocha/Chai and run via Karma. The subdirectories of this directory match the subdirectories of \nsrc/webextension\n.", 
+            "title": "Directory Structure"
+        }, 
+        {
+            "location": "/developer/directory-structure/#directory-structure", 
+            "text": "The following provides a brief outline of the directory structure of this project.", 
+            "title": "Directory Structure"
+        }, 
+        {
+            "location": "/developer/directory-structure/#docs", 
+            "text": "Documentation that gets built and deploy to GitHub pages (you're reading it!).", 
+            "title": "docs/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#src", 
+            "text": "This is where all of the source code for this project lives (except for dependencies, of course). Most importantly, this is where the  bootstrap.js  file lives, which contains the entry points for the restartless XPCOM add-on wrapping our WebExtension.", 
+            "title": "src/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextension", 
+            "text": "Most of the interesting parts of the source code are in here, to be built as an embedded WebExtension.", 
+            "title": "src/webextension/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionbackground", 
+            "text": "Any code meant to run in a background page lives here, such as the datastore and Firefox accounts code. For more information, see the  README.md  in this directory.", 
+            "title": "src/webextension/background/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionfirstrun", 
+            "text": "The first-run page, shown to new users when they install the extension.", 
+            "title": "src/webextension/firstrun/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionlist", 
+            "text": "Common code for all the list views in the extension, as well as the specific views themselves (in subdirectories). For more information, see the  README.md  in this directory.", 
+            "title": "src/webextension/list/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionlistmanage", 
+            "text": "The full-tab management UI.", 
+            "title": "src/webextension/list/manage/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionlistpopup", 
+            "text": "The \"doorhanger\" UI.", 
+            "title": "src/webextension/list/popup/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionlocales", 
+            "text": "All the strings for each locale, in subdirectories with the locale name. For more information, see the  README.md  in this directory.", 
+            "title": "src/webextension/locales/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionsettings", 
+            "text": "The settings UI.", 
+            "title": "src/webextension/settings/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionunlock", 
+            "text": "The doorhanger to be shown when the datastore is locked.", 
+            "title": "src/webextension/unlock/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#srcwebextensionwidgets", 
+            "text": "All the common UI widgets used throughout the source. For more information, see the  README.md  in this directory.", 
+            "title": "src/webextension/widgets/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#test", 
+            "text": "This is where all of the tests for this project live.", 
+            "title": "test/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#testintegration", 
+            "text": "End-to-end integration tests operating on a compiled version of the add-on running in Firefox. These tests are written in Python with Selenium.", 
+            "title": "test/integration/"
+        }, 
+        {
+            "location": "/developer/directory-structure/#testunit", 
+            "text": "Unit tests testing individual components of the source code. These are writen in Javascript using Mocha/Chai and run via Karma. The subdirectories of this directory match the subdirectories of  src/webextension .", 
+            "title": "test/unit/"
+        }, 
+        {
             "location": "/developer/test-plan/", 
             "text": "Test Plan: lockbox-extension\n\n\nOwnership\n\n\n\n\nProduct Integrity: Matt Brandt\n\n\nProduct Manager: Sandy Sage\n\n\nEngineering Manager: Devin Reams\n\n\nEngineering Leads: Matt Miller \n Jim Porter\n\n\n\n\nPurpose\n\n\nTest scope for Q3 and Q4 of the Lockbox Firefox extension. Q3 will take the project through the internal Alpha phase of the product to Q4 when the team will tune a product that we can ship as a limited Beta to external users via Test Pilot.\n\n\nEntry Criteria\n\n\n\n\nQA has access to all PRDs, mocks, and related documents.\n\n\nA run script that installs the WebExtension for Firefox Nightly\n\n\nA compiled and signed extension for Firefox Beta and Release\n\n\nStaging and release channels\n\n\n\n\nExit Criteria\n\n\n\n\nAll bugs against the features have been triaged\n\n\nAll milestone features tagged as user stories and TxP have been resolved fixed and verified by Product Integrity\n\n\nSign off criteria have been met\n\n\n\n\nAcceptance Criteria\n\n\nThis section broadly defines when the product is ready to ship\n\n\n\n\nQA has signed off\n\n\nProduct confirms we are feature complete\n\n\nEngineering confirms we are feature complete\n\n\na11y-review sign off\n\n\nSec review completed and sign off\n\n\nAll info is localized at least for a pre-defined set of locales\n\n\nAll telemetry requirements are in place\n\n\nAll the necessary PR and blog posts have been sent out\n\n\n\n\nTimelines and Milestones\n\n\nAlpha - estimated Q3 timeline\n\n\n\n\nJuly: lay the foundation for system add-on with embedded WebExtension development\n\n\nAugust: begin secure storage and front-end editor design and implementation\n\n\nSeptember: finish editor and storage, package for release\n\n\n\n\nBeta - estimated Q4 timeline\n\n\n\n\nThe team moves to 2 week sprints that include epics and user stories.\n\n\nTracking of these user stories and associated features to take place in Github issues\n\n\nDecember: external \"Beta\" launch to public\n\n\n\n\nTesting Summary\n\n\nThis section describes which components will be the focus of the test team.\n\n\nIn Scope\n\n\n\n\nInvolvement standing up CI for unit test and integration testing\n\n\nParticipate in code reviews\n\n\nDefinition of user stories\n\n\nAuthoring and executing manual test cases\n\n\nAuthoring automated test cases, shared responsibility with the dev team\n\n\nAccessibility review\n\n\nPerformance testing\n\n\n\n\nOut of Scope\n\n\n\n\nSecurity testing\n\n\nInternal - security group\n\n\nExternal - ekr and a published report\n\n\n\n\n\n\nTesting for ESR\n\n\n\n\nRequirements for testing\n\n\nEnvironments\n\n\nAlpha and Beta\n\n\nLockbox Extension\n\n\n\n\n\n\nDesktop - Windows 10, macOS [latest]\n\n\n\n\nFirefox\n\n\n\n\n\n\n\n\nLockbox DataStore\n\n\n\n\nDesktop\n\n\n\n\nSpecifications\n\n\n\n\nWebextension (url)\n\n\nDatastore (url)\n\n\n\n\nTest Strategy\n\n\nUser stories\n\n\nIn Q3 we ideated on a focal point for the team to begin work on, the below list are these high level stories.\n\n\nFuture work will be tracked in github through \nthe use of epics\n and their dependendent user stories.\n\n\n\n\nAs a Firefox Account user, I can set it up in 5 clicks or less, and retrieve and fill my credentials in 3 clicks or less.\n\n\nAs a security conscious user, I understand the value of the password manager, what it is going to do for me without making me feel overwhelmed. I'm notified of the password manager when I'm ready to make the most use of it, and I can set up and access my accounts as easily as writing them down in a document or notebook.\n\n\nWhen I log into websites and applications, I want to ensure my identity is protected, so only I can securely access my accounts with my identity.\n\n\nWhen I create a new account online I want to save the newly created credentials so I can quickly log in the next time I need access to that account.\n\n\nWhen I go to sign into an account, I want my account credentials to populate the form fields when available, and be accessible in one location when not.\n\n\nWhen I need to change my account credentials, I want to be able to access my credentials and update them with recovery options to restore previous account credentials.\n\n\nWhen I want to access my account on my mobile device, I want my account credentials accessible from when I saved them in the browser last, and vice versa, ideally without having to navigate to one location to then manually type in the credentials as viewable on screen.\n\n\n\n\nBuilds\n\n\n\n\nCurrently builds are done on an as needed basis using the installation steps in the ReadMe and docs.\n\n\nTest Pilot build, signing and extension hosting pipeline for internal extension signing and distribution\n\n\n\n\nTesting Tools\n\n\n\n\nTest case creation - \nTestRail\n\n\nManual test case execution - \nTestRail\n\n\nBug management - \nGitHub issues\n\n\nTest automation - FoxPuppet and Selenium\n\n\n\n\nOther Things\n\n\n\n\nReverting to an older version of Firefox\n\n\nCommodity hardware that matches our target user segment\n\n\nConnectivity requirements \n user experience on a diverse range of networks\n\n\nEnsure keyboard only use of the application function (desktop only)\n\n\nMulti-stage workflows are logical and require as few interactions as possible.\n\n\nWhen appropriate provide indications of how far through the process the user is and how much further\n\n\nAvoidance of jargon and slang\n\n\nImportant points and content are highlighted in some way\n\n\nUser errors are clearly highlighted with help messages that suggest solutions\n\n\n\n\nSign Off\n\n\nCriteria\n\n\n\n\n\n\nAll test cases have been executed\n\n\n\n\n\n\nA sufficient level of automated test coverage has been achieved (measured by code coverage tools). Test coverage will also be measured against reduction of risk in the areas designated by the risk assessment plan.\n\n\n\n\n\n\nAll blockers, criticals must be fixed and verified or have an agreed-upon timeline for being fixed (as determined by engineering/QA)\n\n\n\n\n\n\nChecklist\n\n\n\n\n\n\n\n\nExit Criteria\n\n\nOwner\n\n\nStatus\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nTesting Prerequisites (specs, use cases)\n\n\n\n\n\n\n\n\n\n\n\n\nTesting Infrastructure setup\n\n\n\n\n\n\n\n\n\n\n\n\nTest Plan Creation\n\n\n\n\n\n\n\n\n\n\n\n\nTest Cases Creation\n\n\n\n\n\n\n\n\n\n\n\n\nFull Functional Tests Execution\n\n\n\n\n\n\n\n\n\n\n\n\nAutomation Coverage\n\n\n\n\n\n\n\n\n\n\n\n\nPerformance Testing\n\n\n\n\n\n\n\n\n\n\n\n\nAll Defects Logged\n\n\n\n\n\n\n\n\n\n\n\n\nCritical/Blockers Fixed and Verified\n\n\n\n\n\n\n\n\n\n\n\n\nProduct Team\n\n\n\n\n\n\n\n\n\n\n\n\nEngineering Team\n\n\n\n\n\n\n\n\n\n\n\n\nMetrics/Telemetry\n\n\n\n\n\n\n\n\n\n\n\n\nA11y\n\n\n\n\n\n\n\n\n\n\n\n\nl10n\n\n\n\n\n\n\n\n\n\n\n\n\nSecurity", 
             "title": "Test Plan"
